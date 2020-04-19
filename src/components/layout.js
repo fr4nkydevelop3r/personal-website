@@ -1,16 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
+import { Global, css } from "@emotion/core"
+
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./Header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,27 +18,64 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <Header />
+      <Global
+        styles={css`
+          * {
+            box-sizing: border-box;
+            margin: 0;
+          }
+
+          html,
+          body {
+            margin: 0;
+            color: #fff;
+            font-family: "Roboto Slab", serif;
+            font-size: 18px;
+            line-height: 1.4;
+            background-image: linear-gradient(
+              to right,
+              #6a11cb 0%,
+              #2575fc 100%
+            );
+          }
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-family: "Roboto Slab", serif;
+            color: #fff;
+          }
+          ,
+          h6 {
+            line-height: 1.1, + * {
+              margin-top: 0.5rem;
+            }
+          }
+
+          strong {
+            color: #222;
+          }
+
+          li {
+            margin-top: 0.25rem;
+          }
+        `}
+      />
+      <main
+        css={css`
+          margin: 2rem auto 4rem;
+          max-width: 90vw;
+          width: 550px;
+        `}
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+        {children}
+      </main>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

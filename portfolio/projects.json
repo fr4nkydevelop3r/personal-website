@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Fondita food app",
+    "slug": "food-app",
+    "description": "A fondita it's a small restaurant that offers breakfasts and lunches to office workers. In this app customers are able to order and make payments and the fondita's owners are able to admin the restaurant.",
+    "shortDescription": "Food delivery, payments and dashboard for owners",
+    "technologies": ["React", "Redux", "Firebase", "Stripe", "CSS"],
+    "instructions": true,
+    "image": "./images/food_app.jpg",
+    "urlProject": "https://mi-fondita-6a42e.firebaseapp.com/"
+  },
+  {
+    "title": "Flashcards app",
+    "slug": "flash-cards",
+    "description": "Mobile application (Android and iOS) that allows users to study collections of flashcards.  The app allow users to create different categories of flashcards called 'decks', add flashcards to those decks, then take quizzes on those decks.",
+    "shortDescription": "Mobile application (Android and iOS) that allows users to study collections of cards",
+    "technologies": ["React Native", "Redux", "CSS in JS"],
+    "instructions": false,
+    "image": "./images/flashcards.jpg",
+    "urlProject": ""
+  },
+  {
+    "title": "Would you rather?",
+    "slug": "would-you-rather",
+    "description": "In this game users are able to answer questions, see which questions they haven’t answered, see how other people have voted, post questions, and see the ranking of users on the leaderboard.",
+    "shortDescription": "Would you rather game",
+    "instructions": false,
+    "technologies": ["React", "Redux", "CSS"],
+    "image": "./images/would_you_rather.jpg",
+    "urlProject": "https://would-you-rather-by-fr4nky.netlify.com/"
+  }
+]
