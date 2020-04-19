@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import { css } from "@emotion/core"
 
-const QuoteCategory = ({ category }) => {
+const QuoteCategory = ({ category, quotes, handleShowQuote }) => {
+  console.log(quotes)
   const getEmoji = () => {
     let emoji = ""
     switch (category.name) {
@@ -24,33 +25,41 @@ const QuoteCategory = ({ category }) => {
     return emoji
   }
 
+  const getRandomQuote = () => {
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+    handleShowQuote(randomQuote)
+  }
+
   return (
-    <div
-      css={css`
-        margin-bottom: 0.5rem;
-      `}
-    >
-      <button
-        type="button"
+    <>
+      <div
         css={css`
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 8px 8px 0 8px;
-          width: auto;
-          height: auto;
-          font-size: 16px;
-          background-color: inherit;
-          color: #fff;
-          border: none;
-          :focus {
-            outline: none;
-          }
+          margin-bottom: 0.5rem;
         `}
       >
-        {getEmoji()} #{category.name}
-      </button>
-    </div>
+        <button
+          type="button"
+          css={css`
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 8px 0 8px;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+            background-color: inherit;
+            color: #fff;
+            border: none;
+            :focus {
+              outline: none;
+            }
+          `}
+          onClick={getRandomQuote}
+        >
+          {getEmoji()} #{category.name}
+        </button>
+      </div>
+    </>
   )
 }
 

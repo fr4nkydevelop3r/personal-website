@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react"
 import { css } from "@emotion/core"
 import axios from "axios"
 import QuoteCategory from "./QuoteCategory"
+import Quote from "./Quote"
 
 const Quotes = () => {
   const [categories, setCategories] = useState([])
   const [quotes, setQuotes] = useState([])
+  const [quote, setQuote] = useState({})
 
   useEffect(() => {
     try {
@@ -29,6 +31,15 @@ const Quotes = () => {
     }
   }, [])
 
+  const handleShowQuote = quote => {
+    setQuote(quote)
+  }
+
+  const getQuotes = idCategory => {
+    const quotesResult = quotes.filter(quote => quote.list === idCategory)
+    return quotesResult
+  }
+
   //console.log(categories)
   //console.log(quotes)
   return (
@@ -48,8 +59,16 @@ const Quotes = () => {
         `}
       >
         {categories.map(category => (
-          <QuoteCategory category={category} key={category._id} />
+          <QuoteCategory
+            category={category}
+            key={category._id}
+            quotes={getQuotes(category._id)}
+            handleShowQuote={handleShowQuote}
+          />
         ))}
+      </div>
+      <div>
+        <Quote quote={quote} />
       </div>
     </div>
   )
