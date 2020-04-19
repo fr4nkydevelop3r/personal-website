@@ -58,6 +58,7 @@ const ProjectTemplate = ({ data }) => {
               <a
                 href="https://stripe.com/docs/testing"
                 target="_blank"
+                rel="noopener noreferrer"
                 css={css`
                   color: #fff;
                 `}
@@ -110,6 +111,7 @@ const ProjectTemplate = ({ data }) => {
           <a
             href={`${project.urlProject}`}
             target="_blank"
+            rel="noopener noreferrer"
             css={css`
               color: #fff;
               width: 100%;
