@@ -67,7 +67,8 @@ const ProjectTemplate = ({ data }) => {
               </a>
             </p>
             <p>
-              For further instructions to test the owner module please mail me.
+              For further instructions to test the owner module please mail me
+              at hola@frankandrade.dev
             </p>
           </div>
         )}

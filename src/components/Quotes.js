@@ -48,7 +48,7 @@ const Quotes = () => {
         margin-top: 4rem;
       `}
     >
-      <h3>Do you like inspirational quotes? Choose a topic and get one</h3>
+      <h3>Choose a topic and get a powerful quote</h3>
       <div
         css={css`
           margin-top: 1rem;
