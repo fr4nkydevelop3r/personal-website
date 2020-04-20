@@ -35,11 +35,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div
-        css={css`
-          height: 100vh;
-        `}
-      >
+      <div>
         <h1>Hello I'm Frank</h1>
         <h2
           css={css`

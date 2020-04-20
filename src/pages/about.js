@@ -44,11 +44,7 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About me" />
-      <div
-        css={css`
-          height: 100vh;
-        `}
-      >
+      <div>
         <h2>Hola mundo 👋</h2>
         <p
           css={css`

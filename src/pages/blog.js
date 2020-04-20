@@ -12,11 +12,7 @@ const Blog = () => {
     <>
       <Layout>
         <SEO title="Blog" />
-        <div
-          css={css`
-            height: 100vh;
-          `}
-        >
+        <div>
           {posts.map(post => (
             <PostPreview post={post} key={post.slug} />
           ))}

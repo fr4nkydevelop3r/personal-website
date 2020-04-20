@@ -2,11 +2,16 @@ import React from "react"
 import { Global, css } from "@emotion/core"
 
 import Header from "./Header"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header
+        css={css`
+          height: 10vh;
+        `}
+      />
       <Global
         styles={css`
           * {
@@ -26,6 +31,7 @@ const Layout = ({ children }) => {
               #6a11cb 0%,
               #2575fc 100%
             );
+            min-height: 100vh;
           }
 
           h1,
@@ -55,13 +61,19 @@ const Layout = ({ children }) => {
       />
       <main
         css={css`
-          margin: 2rem auto 4rem;
+          margin: 2rem auto 2rem;
           max-width: 90vw;
           width: 550px;
+          min-height: 80vh;
         `}
       >
         {children}
       </main>
+      <Footer
+        css={css`
+          height: 10vh;
+        `}
+      />
     </>
   )
 }
