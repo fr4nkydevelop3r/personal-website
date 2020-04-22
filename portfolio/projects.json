@@ -2,7 +2,7 @@
   {
     "title": "Fondita food app",
     "slug": "food-app",
-    "description": "A fondita it's a small restaurant that offers breakfasts and lunches to office workers. In this app customers are able to order and make payments and the fondita's owners are able to admin the restaurant.",
+    "description": "Fondita is a small restaurant that offers breakfasts and lunches to office workers. In this app customers are able to order and make payments and the fondita's owners are able to admin the restaurant.",
     "shortDescription": "Food delivery, payments and dashboard for owners",
     "technologies": ["React", "Redux", "Firebase", "Stripe", "CSS"],
     "instructions": true,
