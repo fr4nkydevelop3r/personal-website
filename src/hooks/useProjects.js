@@ -15,8 +15,8 @@ const useProjects = () => {
             instructions
             image {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
+                fixed(width: 180) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

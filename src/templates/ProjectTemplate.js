@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import { css } from "@emotion/core"
 import Layout from "../components/Layout"
 import Pill from "../components/Pill"
@@ -16,8 +16,8 @@ export const query = graphql`
       instructions
       image {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fixed(height: 330) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -34,11 +34,12 @@ const ProjectTemplate = ({ data }) => {
         <h3>{project.title}</h3>
         <div
           css={css`
-            margin: 0;
+            display: flex;
+            justify-content: center;
           `}
         >
-          <Image
-            fluid={project.image.childImageSharp.fluid}
+          <Img
+            fixed={project.image.childImageSharp.fixed}
             alt={project.title}
             style={{ margin: "1rem 0" }}
           />

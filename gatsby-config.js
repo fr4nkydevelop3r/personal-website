@@ -33,6 +33,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: "images/thunder.png",
       },
     },
     {
@@ -58,6 +59,13 @@ module.exports = {
       options: {
         name: "posts",
         path: "posts",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/portfolio/images`,
       },
     },
   ],

@@ -10,6 +10,16 @@
     "urlProject": "https://mi-fondita-6a42e.firebaseapp.com/"
   },
   {
+    "title": "Quotes REST API",
+    "slug": "quotes-rest-api",
+    "description": "I made a collection of my favourite quotes and made it public through a REST API.",
+    "shortDescription": "REST API to get poweful quotes",
+    "technologies": ["React", "CSS/Emotion", "Node", "Express", "MongoDB"],
+    "instructions": false,
+    "image": "./images/api-quotes.png",
+    "urlProject": "https://frankandrade.dev/favquotes/"
+  },
+  {
     "title": "Flashcards app",
     "slug": "flash-cards",
     "description": "Mobile application (Android and iOS) that allows users to study collections of flashcards.  The app allow users to create different categories of flashcards called 'decks', add flashcards to those decks, then take quizzes on those decks.",

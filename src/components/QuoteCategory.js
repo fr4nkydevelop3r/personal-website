@@ -46,7 +46,7 @@ const QuoteCategory = ({ category, quotes, handleShowQuote }) => {
             padding: 8px 8px 0 8px;
             width: auto;
             height: auto;
-            font-size: 16px;
+            font-size: 18px;
             background-color: inherit;
             color: #fff;
             border: none;

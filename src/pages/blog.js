@@ -7,7 +7,6 @@ import { css } from "@emotion/core"
 
 const Blog = () => {
   const posts = usePosts()
-  console.log(posts)
   return (
     <>
       <Layout>

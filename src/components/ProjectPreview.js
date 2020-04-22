@@ -32,14 +32,9 @@ const ProjectPreview = ({ project }) => {
             width: 50%;
           `}
         >
-          <Link
-            to={`work/${project.slug}`}
-            css={css`
-              height: 100%;
-            `}
-          >
+          <Link to={`work/${project.slug}`} css={css``}>
             <Image
-              fluid={project.image.childImageSharp.fluid}
+              fixed={project.image.childImageSharp.fixed}
               alt={project.title}
             />
           </Link>
