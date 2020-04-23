@@ -6,12 +6,12 @@ import { useDencrypt } from "use-dencrypt-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import {
-  faGithub,
   faHtml5,
   faCss3,
   faJs,
   faReact,
   faNode,
+  faGit,
 } from "@fortawesome/free-brands-svg-icons"
 import { faCode, faFire, faDatabase } from "@fortawesome/free-solid-svg-icons"
 
@@ -19,7 +19,7 @@ const values = ["mind", "soul", "heart", "family", "neighborhood"]
 
 const About = () => {
   const { result, dencrypt } = useDencrypt()
-  const github = <FontAwesomeIcon icon={faGithub} />
+  const git = <FontAwesomeIcon icon={faGit} />
   const coding = <FontAwesomeIcon icon={faCode} />
   const html5 = <FontAwesomeIcon icon={faHtml5} />
   const css3 = <FontAwesomeIcon icon={faCss3} />
@@ -92,7 +92,7 @@ const About = () => {
               Express <span>E</span>{" "}
             </li>
             <li>MongoDB {mongo}</li>
-            <li>Github {github}</li>
+            <li>Github {git}</li>
           </ul>
         </div>
 
@@ -102,7 +102,7 @@ const About = () => {
           `}
         >
           Being a developer allows you to discover a new world, a world where
-          with the enough persistence you can make a change a in your{" "}
+          with enough persistence you can make a change a in your{" "}
           <span
             css={css`
               font-size: 22px;
