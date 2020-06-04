@@ -13,7 +13,12 @@ import {
   faNode,
   faGit,
 } from "@fortawesome/free-brands-svg-icons"
-import { faCode, faFire, faDatabase } from "@fortawesome/free-solid-svg-icons"
+import {
+  faCode,
+  faFire,
+  faDatabase,
+  faR,
+} from "@fortawesome/free-solid-svg-icons"
 
 const values = ["mind", "soul", "heart", "family", "neighborhood"]
 
@@ -53,7 +58,7 @@ const About = () => {
             font-weight: bold;
           `}
         >
-          I'm Frank. I'm a self-taught frontend developer living in NY
+          I'm Frank. I'm a self-taught full-stack developer living in NY
         </p>
 
         <div
@@ -92,7 +97,7 @@ const About = () => {
               Express <span>E</span>{" "}
             </li>
             <li>MongoDB {mongo}</li>
-            <li>Github {git}</li>
+            <li>Git {git}</li>
           </ul>
         </div>
 
@@ -102,7 +107,7 @@ const About = () => {
           `}
         >
           Being a developer allows you to discover a new world, a world where
-          with enough persistence you can make a change a in your{" "}
+          with enough persistence you can make a change in your{" "}
           <span
             css={css`
               font-size: 22px;

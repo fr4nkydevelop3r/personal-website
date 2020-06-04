@@ -12,7 +12,7 @@
   {
     "title": "Quotes REST API",
     "slug": "quotes-rest-api",
-    "description": "I made a collection of my favourite quotes and made it public through a REST API.",
+    "description": "I made a collection of my favorite quotes and made it public through a REST API.",
     "shortDescription": "REST API to get poweful quotes",
     "technologies": ["React", "CSS/Emotion", "Node", "Express", "MongoDB"],
     "instructions": false,
@@ -30,7 +30,7 @@
     "urlProject": ""
   },
   {
-    "title": "Would you rather?",
+    "title": "Would you rather? game",
     "slug": "would-you-rather",
     "description": "In this game users are able to answer questions, see which questions they haven’t answered, see how other people have voted, post questions, and see the ranking of users on the leaderboard.",
     "shortDescription": "Would you rather game",

@@ -42,8 +42,7 @@ const IndexPage = ({ data }) => {
             margin-top: 1.5rem;
           `}
         >
-          I'm a frontend developer building awesome web apps using modern
-          technologies
+          I'm a full-stack developer building awesome web-apps
         </h2>
         <div
           css={css`
