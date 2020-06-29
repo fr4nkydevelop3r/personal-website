@@ -6,11 +6,7 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faLinkedin,
-  faGithub,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
+
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql`
@@ -27,10 +23,7 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => {
-  const linkedin = <FontAwesomeIcon icon={faLinkedin} />
   const email = <FontAwesomeIcon icon={faEnvelope} />
-  const github = <FontAwesomeIcon icon={faGithub} />
-  const twitter = <FontAwesomeIcon icon={faTwitter} />
 
   return (
     <Layout>
@@ -42,7 +35,35 @@ const IndexPage = ({ data }) => {
             margin-top: 1.5rem;
           `}
         >
-          I'm a full-stack developer building awesome web-apps
+          I'm a full-stack developer and the CEO of taconchile.com{" "}
+          <span
+            role="img"
+            aria-label="taco"
+            css={css`
+              font-size: 16px;
+            `}
+          >
+            🌮
+          </span>{" "}
+          <span
+            role="img"
+            aria-label="chile"
+            css={css`
+              font-size: 18px;
+            `}
+          >
+            🌶️
+          </span>{" "}
+          <span
+            role="img"
+            aria-label="mexico"
+            css={css`
+              font-size: 18px;
+            `}
+          >
+            {" "}
+            🇲🇽
+          </span>
         </h2>
         <div
           css={css`
@@ -78,21 +99,7 @@ const IndexPage = ({ data }) => {
                 color: #fff;
               }
             `}
-          >
-            {" "}
-            <a
-              href="https://www.linkedin.com/in/frank-andrade-olivares/"
-              target="_blank"
-            >
-              {linkedin}{" "}
-            </a>{" "}
-            <a href="https://github.com/fr4nkydevelop3r" target="_blank">
-              {github}{" "}
-            </a>
-            <a href="https://twitter.com/fandrademx" target="_blank">
-              {twitter}
-            </a>
-          </div>
+          ></div>
           <div
             css={css`
               width: 230px;

@@ -58,7 +58,20 @@ const About = () => {
             font-weight: bold;
           `}
         >
-          I'm Frank. I'm a self-taught full-stack developer living in NY
+          I'm helping mexican restaurants to sell online without crazy fees. I
+          love food{" "}
+          <span role="img" aria-label="taco">
+            🌮{" "}
+          </span>
+          and I love technology{" "}
+          <span role="img" aria-label="techno-man">
+            👨‍💻{" "}
+          </span>
+          Esta va por{" "}
+          <span role="img" aria-label="mexico">
+            {" "}
+            🇲🇽
+          </span>
         </p>
 
         <div
